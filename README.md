@@ -1,16 +1,132 @@
-# React + Vite
+# AJ Lens Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern photography and videography portfolio website built to showcase professional creative work, including:
 
-Currently, two official plugins are available:
+- Photography
+- Videography
+- Portraits
+- Events
+- Products & Food Photography
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Website
 
-## React Compiler
+🔗 https://aj-lens-portfolio.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive design for desktop and mobile
+- Cinematic dark luxury theme
+- Portfolio gallery sections
+- Products & Food gallery modal
+- Videography showcase
+- Event photography section
+- Portrait photography section
+- Contact form
+- Smooth user experience
+
+---
+
+## Built With
+
+- React
+- Vite
+- JavaScript
+- CSS3
+- Vercel
+
+---
+
+## Project Structure
+
+```bash
+public/
+├── images/
+│   ├── products-food/
+│   ├── portrait.jpg
+│   ├── event.jpg
+│   └── videography-cover.png
+│
+├── videos/
+│   ├── Beach.mp4
+│   ├── Chicago.mp4
+│   ├── Lake.mp4
+│   ├── Sunset.mp4
+│   └── Tahoe.mp4
+
+src/
+├── assets/
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Ajaya012/aj-lens-portfolio.git
+```
+
+Navigate to the project:
+
+```bash
+cd aj-lens-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## Deployment
+
+This project is deployed using Vercel.
+
+Every push to the GitHub repository automatically triggers a new deployment.
+
+---
+
+## About
+
+AJ Lens is a creative photography and videography brand focused on capturing timeless stories through:
+
+- Portrait Photography
+- Event Coverage
+- Product Photography
+- Food Photography
+- Cinematic Videography
+
+---
+
+## Author
+
+**Ajay**
+
+Photography & Videography Portfolio
+
+GitHub:
+https://github.com/Ajaya012
+
+Portfolio:
+https://aj-lens-portfolio.vercel.app/

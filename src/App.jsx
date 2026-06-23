@@ -7,6 +7,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showVideoGallery, setShowVideoGallery] = useState(false);
   const [showFoodGallery, setShowFoodGallery] = useState(false);
+  const [showPortraitGallery, setShowPortraitGallery] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const videos = [
   "/videos/Sunset.mp4",
@@ -24,11 +25,21 @@ function App() {
   "/images/products-food/IMG6.JPG",
   "/images/products-food/IMG7.JPG",
   ];
+  const portraitImages = [
+  "/images/portraits/portrait1.JPG",
+  "/images/portraits/portrait2.JPG",
+  "/images/portraits/portrait3.JPG",
+  "/images/portraits/portrait4.JPG",
+  "/images/portraits/portrait5.JPG",
+  "/images/portraits/portrait6.JPG",
+  "/images/portraits/portrait7.JPG",
+  "/images/portraits/portrait8.JPG",
+  ];
   return (
     <>
       {/* NAVBAR */}
       <nav className="navbar">
-        <div className="brand">AJ Lens</div>
+        <div className="brand">A J&nbsp;&nbsp;L E N S</div>
         <ul>
         <li>
           <a href="#home">Home</a>
@@ -118,12 +129,17 @@ function App() {
             <p>Cinematic Films & Reels</p>
           </div>
 
-          <div className="gallery-item">
+          <div
+            className="gallery-item"
+            onClick={() => setShowPortraitGallery(true)}
+          >
             <img
               src="/images/portrait.jpg"
               alt="Portrait"
             />
+
             <h3>Portrait</h3>
+
             <p>Capturing Personalities</p>
           </div>
 
@@ -412,6 +428,38 @@ function App() {
                 key={index}
                 src={img}
                 alt={`Food ${index}`}
+                className="food-gallery-image"
+                onClick={() => setSelectedImage(img)}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    )}
+    {showPortraitGallery && (
+      <div
+        className="video-modal"
+        onClick={() => setShowPortraitGallery(false)}
+      >
+        <div
+          className="video-gallery-modal"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button
+            className="close-btn"
+            onClick={() => setShowPortraitGallery(false)}
+          >
+            x
+          </button>
+
+          <h2>Portraits</h2>
+
+          <div className="food-gallery-grid">
+            {portraitImages.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`Portrait ${index + 1}`}
                 className="food-gallery-image"
                 onClick={() => setSelectedImage(img)}
               />
